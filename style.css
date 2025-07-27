@@ -1,0 +1,170 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+
+.container, section, .mensaje {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+form div, fieldset {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+
+input[type="radio"] {
+    margin-right: 8px;
+    transform: scale(1.1);
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+footer a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+.mensaje h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.mensaje p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.mensaje a {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.mensaje a:hover {
+    background-color: #2980b9;
+}
+
+
+.respuesta-boton .textarea-boton {
+    display: flex;
+    gap: 15px;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.respuesta-boton textarea {
+    flex: 2;
+    min-width: 200px;
+    resize: vertical;
+}
+
+.respuesta-boton button {
+    flex: 1;
+    align-self: stretch;
+    min-width: 120px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .respuesta-boton .textarea-boton {
+        flex-direction: column;
+    }
+
+    .respuesta-boton button {
+        width: 100%;
+        align-self: center;
+    }
+
+    h1, h2 {
+        font-size: 22px;
+    }
+
+    input, textarea {
+        font-size: 15px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
